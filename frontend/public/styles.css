@@ -1,0 +1,69 @@
+body{
+    height: 50%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-family: 'Helvetica', sans-serif;
+}
+
+iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    pointer-events: none; /* Ensures the iframe doesn't block interactions with elements on top */
+}
+
+
+div {
+    position: relative;
+    z-index: 1;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+}
+
+th,
+td {
+    text-align: center;
+        border: none;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: fixed;
+    /*position:absolute;*/
+  
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 95vw;
+    height: 70vh; /* 50% of the viewport height */
+    overflow-y: auto; /* Allow tbody to scroll */
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+#transparent-bg{
+    background-color: transparent; /* Transparent background */
+}
+
+#t_head{
+    position: sticky;
+    top: 0; /* Stick to the top */
+    }
+
